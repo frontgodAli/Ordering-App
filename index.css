@@ -1,0 +1,115 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Smythe', system-ui;
+}
+header{
+    padding: 50px;
+    background-image: url(hero-bg.jpg);
+    background-size: cover;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    color: white;
+}
+#main{
+    width: 600px;
+    margin: 0 auto;
+    padding:0 45px;
+}
+.item-container{
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+.item{
+    display: flex;
+    gap: 30px;
+}
+.order-section{
+    width: 600px;
+    margin: 0 auto;
+}
+.label-button{
+    display:flex;
+    gap: 10px;
+}
+.order-info{
+    display: flex;
+    justify-content: space-between;
+}
+.complete-order{
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: #16DB99;
+    padding: 20px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+.total-price{
+    margin: 20px 0;
+    padding:20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    border-top:2px solid;
+}
+.order-section h2{
+    text-align: center;
+    font-size: 28px;
+}
+.order-section p{
+    font-size: 28px;
+    margin: 0;
+}
+.remove-btn{
+    border: none;
+    background-color: transparent;
+    color:#BBBBBB;
+    font-size:12px;
+    cursor:pointer;
+}
+.emoji{
+    font-size: 70px;
+    margin: 0;
+}
+.item-name{
+    font-size:28px;
+    margin: 0;
+}
+.item-ingredients{
+    margin: 0;
+    font-size:16px;
+    color:#8B8B8B;
+}
+.item-price{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+.add-order{
+    font-size: 25px;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1.5px solid #DEDEDE;
+}
+.add-order:hover{
+    color:white;
+    background-color: hsl(120, 74%, 42%);
+}
+.add-order:active{
+    color:white;
+    background-color: hsl(120, 74%, 52%);
+}
