@@ -1,115 +1,183 @@
-body,html{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
     font-family: 'Smythe', system-ui;
 }
-header{
-    padding: 50px;
-    background-image: url(hero-bg.jpg);
-    background-size: cover;
-    width: 600px;
-    background-repeat: no-repeat;
+/*divs*/
+header {
+    background-image: url(images/hero-bg.jpg);
     background-position: center;
-    margin: 0 auto;
-    color: white;
-}
-#main{
+    background-size: cover;
+    object-position: center;
     width: 600px;
     margin: 0 auto;
-    padding:0 45px;
+    padding: 40px;
+    color: white;
+    line-height: 60px;
 }
-.item-container{
-    padding: 60px 0;
+
+main {
+    width: 600px;
+    margin: 0 auto;
+    padding:0 40px;
+}
+
+.item {
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.description-container {
+    width: 70%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid;
 }
-.item{
+.order-label{
     display: flex;
-    gap: 30px;
-}
-.order-section{
-    width: 600px;
-    margin: 0 auto;
-}
-.label-button{
-    display:flex;
     gap: 10px;
 }
-.order-info{
+.your-order{
     display: flex;
     justify-content: space-between;
-}
-.complete-order{
-    width: 100%;
-    color: white;
-    border: none;
-    background-color: #16DB99;
-    padding: 20px 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
 }
 .total-price{
-    margin: 20px 0;
-    padding:20px 0 0 0;
     display: flex;
     justify-content: space-between;
-    border-top:2px solid;
+    padding: 20px 0 40px 0;
 }
+.order-container{
+    border-bottom: 2px solid;
+    padding-bottom: 30px;
+}
+.order-section{
+    display: none;
+}
+.confirmation{
+    margin:30px 0;
+    background-color:#ECFDF5;
+    color: #065F46;
+    font-size: 32px;
+    text-align: center;
+    padding: 60px 0;
+}
+/**/
+
+
+
+/* Typography */
 .order-section h2{
     text-align: center;
+    margin: 40px;
     font-size: 28px;
 }
 .order-section p{
     font-size: 28px;
-    margin: 0;
 }
-.remove-btn{
-    border: none;
-    background-color: transparent;
-    color:#BBBBBB;
-    font-size:12px;
-    cursor:pointer;
+.item-name {
+    font-size: 28px;
 }
-.emoji{
-    font-size: 70px;
-    margin: 0;
+
+.item-ingredients {
+    font-size: 16px;
+    color: #8B8B8B;
 }
-.item-name{
-    font-size:28px;
-    margin: 0;
+
+.item-price {
+    font-size: 20px;
+    margin: 10px 0;
 }
-.item-ingredients{
-    margin: 0;
-    font-size:16px;
-    color:#8B8B8B;
+
+.emoji {
+    font-size: 80px;
 }
-.item-price{
+.order-price{
     font-size: 20px;
 }
+/**/
 
 
-
-
-
-
-
-.add-order{
-    font-size: 25px;
-    background-color: white;
+/*buttons*/
+.add-btn{
+    border: 1.5px solid #DEDEDE;
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    font-size: 32px;
+    background-color: white;
     cursor: pointer;
-    border: 1.5px solid #DEDEDE;
 }
-.add-order:hover{
-    color:white;
-    background-color: hsl(120, 74%, 42%);
+.complete-order-btn{
+    width: 100%;
+    background-color: #16DB99;
+    color: white;
+    border: none;
+    padding: 20px 0;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
 }
-.add-order:active{
-    color:white;
-    background-color: hsl(120, 74%, 52%);
+.remove-btn{
+    border: none;
+    background: transparent;
+    color:#BBBBBB;
+    font-size: 12px;
+    cursor: pointer;
 }
+
+/**/
+
+/*Modal*/
+.modal h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    border: 1.5px solid rgba(117, 117, 117, 1);
+    width: 520px;
+    height: 490px;
+    display: none;
+}
+
+.modal input{
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.modal button{
+    width: 100%;
+}
+.pay-btn{
+    border: none;
+    cursor: pointer;
+    background-color: #16DB99;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+
+
+/**/

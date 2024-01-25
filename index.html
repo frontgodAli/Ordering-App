@@ -10,24 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header>
-            <h1>Jimmy's Diner</h1>
-            <h2>the best burgers and pizzas in town.</h2>
-        </header>
-        <div id="main">
-
-        </div>
-        <div class="order-section" id="order-section">
+    <header>
+        <h1>Jimmy’s Diner</h1>
+        <h2>The best burgers and pizzas in town.</h2>
+    </header>
+    <main>
+        <div id="items-menu"></div>
+        <div id="order-section" class="order-section">
             <h2>Your order</h2>
-            <div class="order-container" id="order-container">
-                
+            <div id="order-container" class="order-container">
             </div>
             <div class="total-price">
-                <p>Total price:</p>
-                <p id="total-price"></p>
+                <p>Total price :</p>
+                <p id="order-total-price" class="order-price"></p>
             </div>
-            <button class="complete-order">Complete order</button>
+            <button id="complete-order-btn" class="complete-order-btn">Complete order</button>
         </div>
+        <div class="modal" id="modal">
+            <h2>Enter card details</h2>
+            <form id="my-form">
+                <input name="form-name" id="form-name" required placeholder="Enter your name" type="text">
+                <input name="form-card" id="form-card" required pattern="[0-9]+" placeholder="Enter card number" type="text">
+                <input name="form-cvv" id="form-cvv" required pattern="[0-9]{4}" placeholder="Enter CVV" type="text">
+                <button class="pay-btn" type="submit">Pay</button>
+            </form>
+        </div>
+    </main>
+
     <script type="module" src="index.js"></script>
 </body>
 </html>
